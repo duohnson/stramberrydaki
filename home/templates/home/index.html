@@ -2,50 +2,31 @@
 <html lang="es">
 <head>
 <meta charset="UFT-8">
+<!--
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link href="/static/css/sass.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+-->
 <title>Strawberry Daki</title>
 </head>
 
-<body style="text-align: center;">  <!-- style da estilos -->
-    
-    <div id="navbar-container"></div>
-    <script src="/static/js/navbar.js"></script>
-    <script src="/static/js/bootstrap.bundle.js"></script>
+    <body style="text-align: center;">  <!-- style da estilos -->
+
     <!-- Titulos -->
     <h1>
-        <img src="static/img/fresa.png" alt="fresas" width="50" height="50">Strawberry Daki
-        <img src="static/img/fresa.png" alt="fresas" width="50" height="50"></h1>
+        <img src="/static/img/fresa.png" alt="fresas" width="50" height="50">Bienvenido
+        <img src="/static/img/fresa.png" alt="fresas" width="50" height="50"></h1>
     <h2>Compras en linea</h2>
-    <p>Puedes explorar los modulos, secciones y interacciones de la web.</p>
-
-    <!--<img src="static/img/fresa.png" alt="fresas" width="100" height="100" style="display: block; margin: 0 auto;"> -->
-
-    <ul>
-        
-<!--
-        <h4>Bienvenido</h4>
-        <h4><a href="#"></a>Tienda</h4>
-        <h4><a href="{% url 'contacto' %}">Contacto</a></h4>
-        <h4><a href="#"></a>Sobre nosotros</h4>
-        <h4><a href="#"></a>Realiza tu pedido personalizado</h4>
--->
+    <ul> 
+    <h1>De momento el sitio web se encuentra en aprendizaje y desarrollo.</h1>
+    <p>Pronto aplicaremos muchas mas funciones.</p>
+    <footer>
+        <p>En creacion</p>
         <a href="{% url 'index' %}" class="btn btn-primary text-decoration-none">Bienvenido</a>
         <a href="{% url 'tienda' %}" class="btn btn-primary text-decoration-none">Tienda</a>
         <a href="{% url 'contacto' %}" class="btn btn-primary text-decoration-none">Contacto</a>
         <a href="{% url 'pedidos' %}" class="btn btn-primary text-decoration-none">Pedidos</a>
-
-
-    </ul>
-
-
-    <!--
-    <footer>
-        <p>En creacion</p>
-        <a href="{% url 'contacto' %}">
-        Contacto</a>
     </footer>
--->
-</body>
+    
+    </body>
 </html>
