@@ -134,6 +134,14 @@ button:hover:after {
   color: var(--font-color-sub);
 }
 
+.card-person {
+  font-size: 18px;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
 .card-divider {
   width: 100%;
   border: 1px solid var(--main-color);
@@ -397,3 +405,149 @@ button:hover:after {
 }
 
 /* barra busqueda final */  
+
+.detalle-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.detalle-card {
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #eeb0c21a; /* Un rosa más suave para el fondo */
+    --main-color: #e6385e65;
+    
+    display: flex;
+    flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
+    max-width: 800px;
+    width: 100%;
+    background: var(--bg-color);
+    border: 3px solid var(--main-color);
+    box-shadow: 8px 8px var(--main-color); /* Sombra sólida como tus otras cards */
+    border-radius: 15px;
+    overflow: hidden;
+    gap: 30px;
+    padding: 30px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.detalle-card-img {
+    flex: 1;
+    min-width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 2px solid var(--main-color);
+    overflow: hidden;
+}
+
+.detalle-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.detalle-card-img:hover img {
+    transform: scale(1.05); /* Zoom suave al pasar el mouse */
+}
+
+.detalle-card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.detalle-card-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #df33c8e0; /* Color rosa fuerte del logo */
+    margin: 0;
+}
+
+.detalle-card-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--font-color-sub);
+    margin-bottom: 20px;
+}
+
+.detalle-card-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detalle-card-price span {
+    color: #df33c8e0;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    .detalle-card {
+        flex-direction: column;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .detalle-card-img {
+        min-width: 100%;
+        height: 300px;
+    }
+
+    .detalle-card-title {
+        font-size: 1.8rem;
+    }
+}
+
+
+body {
+    background: linear-gradient(135deg, #fdfcfb 0%, #ffe8ef 100%);
+    background-attachment: fixed;
+}
+
+body {
+    background-color: #fff5f7;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); 
+}
+
+.bg-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: #fff;
+}
+
+.bg-blur::before, .bg-blur::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+}
+
+.bg-blur::before {
+    background: #f06292; /* El rosa de tus botones */
+    top: -100px;
+    right: -100px;
+}
+
+.bg-blur::after {
+    background: #ffc1e3;
+    bottom: -100px;
+    left: -100px;
+}
